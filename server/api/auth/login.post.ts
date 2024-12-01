@@ -16,5 +16,6 @@ export default defineEventHandler(async (event) => {
   if (!existingUser || existingUser.password !== password) {
     throw createError({ statusCode: 401, message: 'Invalid email or password.' });
   }
+
   return { message: 'Login successful', user: existingUser };
 });
