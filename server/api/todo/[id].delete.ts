@@ -1,5 +1,5 @@
 import { db } from "~/server/db/dbservice";
-import { todo } from "~/server/db/schema/schema_todo.js";
+import { todo } from "~/server/db/schema/todo.js";
 
 export default defineEventHandler(async (event) => {
   try {
